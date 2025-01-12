@@ -1,0 +1,170 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Header */
+header {
+  background: #800000;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  /* width: 100px; */
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.search-icon img {
+  width: 30px;
+  cursor: pointer;
+}
+
+/* Layout */
+.layout {
+  display: flex;
+  height: calc(100vh - 50px); /* Full height minus header */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 25%;
+  background: #f5f5f5;
+  padding: 20px;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.sidebar h3 {
+  color: #800000;
+  margin: 15px 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+/* Right Content */
+.content {
+  flex: 1; /* Take remaining space */
+  overflow-y: auto; /* Make it scrollable */
+  padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.hero-text {
+  max-width: 800px;
+  color: #333;
+}
+
+.hero-text h1 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Grid Section */
+.grid-section {
+  margin-top: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Ensure 6 pictures remain aligned */
+  gap: 20px;
+}
+
+.grid-item {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Footer Section */
+.main-footer {
+  background-color: #800000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.main-footer a {
+  color: #ffcccc;
+  text-decoration: underline;
+}
+
+.subscribe-button {
+  background-color: white;
+  color: #800000;
+  border: 2px solid white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.subscribe-button:hover {
+  background-color: #ffcccc;
+  color: #800000;
+}
+
+
+
