@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIT University</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <div class="container">
-            <img src="./herologo.svg" alt="MIT Logo" class="mit-logo">
+        <!-- <div class="header-container"> -->
+            <img src="./mit-logo.svg" alt="MIT Logo" class="logo">
             <nav>
                 <ul>
                     <li><a href="#">Education</a></li>
@@ -23,82 +23,109 @@
                     <li><a href="#">About MIT</a></li>
                 </ul>
             </nav>
-            <div class="search-icon" style="background-image: #ff1423;">
-                <img src="./searchicon.svg" alt="Search" style="color: #ff1423;">
+            <div class="search-icon">
+                <img src="./search.png" alt="Search" class="search-icon">
             </div>
-        </div>
+        <!-- </div> -->
     </header>
 
-    <!-- Text Box Under Header -->
-    <section class="text-box" style="overflow:hidden;">
-        <div class="container">
-            <p>
-                <strong>Updates from campus:</strong> Read the latest from MIT and its leaders regarding events on campus.
-            </p>
-        </div>
-    </section>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Industrial processes at MIT</h1>
-            <p>
-                Industrial processes that use heat to purify a mixture’s components account for roughly 10 percent of the energy use in the U.S. Zachary Smith is developing highly efficient filters that do the job at room temperature, reducing costs and environmental impact.
-            </p>
-        </div>
-    </section>
-
-    <!-- Main Content -->
-    <main>
-        <section class="grid-section">
-            <h2>More from the MIT Community</h2>
-            <div class="grid-container">
-                <!-- Grid Items -->
-                <div class="grid-item">
-                    <img src="./around campus.jpg" alt="Community 1">
-                    <h3>Around Campus</h3>
-                    <p>More puzzles, less sleep. The annual three days MIT Mystery Hunt, a tradition since 1981, returns to campus on January 17.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="./spotlight.jpg" alt="Community 2">
-                    <h3>Spotlight</h3>
-                    <p>To help design large structures, Zane Schemmer writes algorithms that optimize function, minimize carbon footprint, and produce a manufacturable result. The goal is “to make it easier to take our designs out of the computer and create them in real life,” he says.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="./thismith.jpg" alt="Community 3">
-                    <h3>#THISISMIT</h3>
-                    <p>Via @mitsailingpavilion on Instagram: “Just because it’s winter doesn’t mean we will stop posting sunset pics! Work is underway to be ready for the next season – lots of boats means lots of projects!</p>
-                </div>
-                <div class="grid-item">
-                    <img src="./research.jpg" alt="Community 4">
-                    <h3>Research Highlights</h3>
-                    <p>CSAIL researchers’ new AI model produces human-like vocal imitations of everyday sounds. Like a sketch of a visual scene, “our method captures the abstract, non-phono-realistic ways humans express the sounds they hear,” Kartik Chandra says.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="./spotlightt.jpg" alt="Community 5">
-                    <h3>Spotlight</h3>
-                    <p>Ariel White explores how previously incarcerated people and others on the margins of U.S. politics might participate more fully in our democracy. Although they tend to be left out of discussions on voting, “I think there is a much broader story to be told here,” she says.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="./thiss.jpg" alt="Community 6">
-                    <h3>#THISISMIT</h3>
-                    <p>Via @mitlogs on Instagram: “Big thanks to everyone who showed up to our Fall Concert: Avalog the Last Harmonybender!! Stay tuned for another great semester of music.”</p>
-                </div>
+    <!-- Layout -->
+    <div class="layout">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <h3>Explore websites, people, and locations</h3>
+            <div class="search-box">
+                <input type="text" placeholder="What are you looking for?">
+                <button><img src="./searchh.png" alt="Search"></button>
             </div>
-        </section>
-    </main>
+            <div class="resources">
+                <h3>Top resources for</h3>
+                <ul>
+                    <li>Prospective students</li>
+                    <li>Faculty & staff</li>
+                    <li>Parents & families</li>
+                    <li>Current students</li>
+                    <li>Alumni</li>
+                    <li>All resources</li>
+                </ul>
+            </div>
+            <div class="featured-topic">
+                <h3>Featured topic</h3>
+                <p>Climate change <span>🌱</span></p>
+            </div>
+            <footer>
+                <p>Massachusetts Institute of Technology</p>
+                <address>
+                    77 Massachusetts Avenue, Cambridge, MA, USA
+                </address>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Social Media Hub</a></li>
+                </ul>
+            </footer>
+        </aside>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-container">
-            <p>© 2025 Massachusetts Institute of Technology</p>
-            <ul>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Accessibility</a></li>
-                <li><a href="#">Social Media Hub</a></li>
-            </ul>
-        </div>
-    </footer>
+        <!-- Right Content -->
+        <main class="content">
+            <!-- Hero Section -->
+            <section class="hero">
+                <img src="./heroimage.jpg" alt="Hero Image" class="hero-img">
+                <div class="hero-text">
+                    <h1>Industrial processes at MIT</h1>
+                    <p>
+                        Industrial processes that use heat to purify a mixture’s components account for roughly 10 percent of the energy use in the U.S. Zachary Smith is developing highly efficient filters that do the job at room temperature, reducing costs and environmental impact.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Main Content -->
+            <section class="grid-section">
+                <h2>More from the MIT Community</h2>
+                <div class="grid-container">
+                    <!-- Existing Items -->
+                    <div class="grid-item">
+                        <img src="./around campus.jpg" alt="Community 1">
+                        <h3>Around Campus</h3>
+                        <p>More puzzles, less sleep. The annual three days MIT Mystery Hunt, a tradition since 1981, returns to campus on January 17.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="./spotlight.jpg" alt="Community 2">
+                        <h3>Spotlight</h3>
+                        <p>To help design large structures, Zane Schemmer writes algorithms that optimize function, minimize carbon footprint, and produce a manufacturable result.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="./thismith.jpg" alt="Community 3">
+                        <h3>#THISISMIT</h3>
+                        <p>Via @mitsailingpavilion on Instagram: “Just because it’s winter doesn’t mean we will stop posting sunset pics! Work is underway to be ready for the next season – lots of boats means lots of projects!”</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="./research.jpg" alt="Community 4">
+                        <h3>Research Highlights</h3>
+                        <p>CSAIL researchers’ new AI model produces human-like vocal imitations of everyday sounds.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="./spotlightt.jpg" alt="Community Extra 1">
+                        <h3>Community Extra 1</h3>
+                        <p>MIT's community is full of passionate individuals solving real-world problems.</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="./thiss.jpg" alt="Community Extra 2">
+                        <h3>Community Extra 2</h3>
+                        <p>Students at MIT collaborate across disciplines to innovate and create solutions.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer Section -->
+            <footer class="main-footer">
+                <div class="footer-container">
+                    <p>Want more about MIT?</p>
+                    <p>Explore <a href="#">more spotlights</a>, or subscribe to receive daily or weekly doses of MIT in your inbox.</p>
+                    <button class="subscribe-button">Subscribe</button>
+                </div>
+            </footer>
+        </main>
+    </div>
 </body>
 </html>
-

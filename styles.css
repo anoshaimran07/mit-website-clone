@@ -6,21 +6,10 @@ body {
     color: #333;
 }
 
-.mit-logo {
-    width: 10rem;
-    /* height: 60rem !important; */
-    margin-left: 2rem;
-}
-
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    width: 90%;
     max-width: 1200px;
-    height: 100%;
-    height: 75px;
-    /* margin: auto; */
+    margin: auto;
 }
 
 /* Header */
@@ -31,12 +20,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex: 1 1 0%;
 }
 
 header .logo {
-    width: 219px;
-    height: 46px;
+    width: 100px; /* Adjusted logo size */
 }
 
 header nav ul {
